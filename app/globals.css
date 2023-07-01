@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar_div {
+  @apply flex justify-around items-center w-full h-16 bg-gray-800 text-white z-10;
+}
