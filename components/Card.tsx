@@ -14,9 +14,9 @@ const Card = () => {
   return (
     <div className="flex justify-center items-center w-full flex-col my-22">
       {projectdata.map((data) => (
-        <div className="flex w-[80%] justify-between items-center gap-x-5 p-6" key={data.id}>
-          <div className="flex w-[91rem] h-[14rem]">
-            <Image src={data.Image} alt="Logo" width={300} height={300} className="object-contain self-center" />
+        <div className="flex w-[80%] justify-between items-center p-6 gap-x-3" key={data.id}>
+          <div className="flex w-[90rem] h-[14rem]">
+            <Image src={data.Image} alt="Logo" width={300} height={100} className="object-contain self-center" />
           </div>
           <div>
             <div className="">
