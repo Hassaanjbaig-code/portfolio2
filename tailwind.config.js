@@ -14,7 +14,12 @@ module.exports = {
       },
       fontFamily: {
         Belanosima: ["Belanosima", "sans-serif"],
-      }
+        Roboto: ['Roboto Condensed', 'sans-serif']
+      },
+      gridTemplateColumns: {
+        '14c': 'repeat(3, minmax(0, 0.23fr));',
+        '16': 'repeat(16, minmax(0, 1fr))',
+      },
     },
   },
   plugins: [],

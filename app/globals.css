@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,4 +26,22 @@
 
 .card {
   @apply flex border border-x-gray-200 rounded-lg shadow-lg overflow-hidden w-[70%] h-[50%] gap-x-6 my-16;
+}
+
+.Card_title {
+  @apply font-Belanosima font-bold text-2xl
+}
+
+.frame:nth-child(1) {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: gray;
+}
+
+.frame:nth-child(2),
+.frame:nth-child(3) {
+  list-style: circle;
+  font-weight: 300;
+  color: #9d8c8ceb;
 }
