@@ -20,5 +20,9 @@
 }
 
 .project {
-  @apply flex flex-col justify-center items-center gap-y-4 bg-gray-500 text-white w-full h-screen overflow-hidden;
+  @apply bg-gray-700 text-white;
+}
+
+.card {
+  @apply flex border border-x-gray-200 rounded-lg shadow-lg overflow-hidden w-[70%] h-[50%] gap-x-6 my-16;
 }
