@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily: {
         Belanosima: ["Belanosima", "sans-serif"],
-        Roboto: ['Roboto Condensed', 'sans-serif']
+        Roboto: ['Roboto Condensed', 'sans-serif'],
+        Bebas_Neue: ['Bebas Neue', 'sans-serif']
       },
       gridTemplateColumns: {
         '14c': 'repeat(3, minmax(0, 0.23fr));',

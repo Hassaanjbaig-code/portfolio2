@@ -54,3 +54,19 @@ export const intro = "I'm a passionate developer who loves to create innovative 
 
 export const resume = "https://docs.google.com/document/d/1AJoLSthvxEOgcU_DZVjgyKcJvscb33wlCZcNRr2NS3A/edit?pli=1";
 
+export const Front_End = [ "HTML5", "CSS", "JavaScript", "Tailwind CSS", "BootStrap5", "React", "Redux", "SASS" ];
+export const Front = [
+  { id: 1 ,name: "HTML5" },
+  { id: 2 ,name: "CSS" },
+  { id: 3 ,name: "JavaScript" },
+  { id: 4 ,name: "Tailwind CSS" },
+  { id: 5 ,name: "Bootstrap" },
+  { id: 6 ,name: "React" },
+  { id: 7 ,name: "Redux" },
+  { id: 8 ,name: "SASS" },
+]
+
+export const Back_End = [ "Ruby", "Rail", "PostgreSQL", "Rswag", "JWT", "CanCanCan", "Node JS", "Device" ];
+
+export const Developer_Tool = [ "GIT", "GitHub", "Chrome Dev Tool", "Netlify", "Render", "VS code", "Terminal", "Linux" ]
+
