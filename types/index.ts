@@ -1,4 +1,5 @@
 export interface Table {
     name: string,
-    front: any[]
+    front: any[],
+    containerStyle?: string
 }
