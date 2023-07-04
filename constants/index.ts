@@ -56,17 +56,19 @@ export const resume = "https://docs.google.com/document/d/1AJoLSthvxEOgcU_DZVjgy
 
 export const Front_End = [ "HTML5", "CSS", "JavaScript", "Tailwind CSS", "BootStrap5", "React", "Redux", "SASS" ];
 export const Front = [
-  { id: 1 ,name: "HTML5" },
-  { id: 2 ,name: "CSS" },
-  { id: 3 ,name: "JavaScript" },
-  { id: 4 ,name: "Tailwind CSS" },
-  { id: 5 ,name: "Bootstrap" },
-  { id: 6 ,name: "React" },
-  { id: 7 ,name: "Redux" },
-  { id: 8 ,name: "SASS" },
+  { id: 1 ,name: "HTML5", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" },
+  { id: 2 ,name: "CSS", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" },
+  { id: 3 ,name: "JavaScript", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" },
+  { id: 4 ,name: "Tailwind CSS", src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
+  { id: 5 ,name: "Bootstrap", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" },
+  { id: 6 ,name: "React", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" },
+  { id: 7 ,name: "Redux", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" },
+  { id: 8 ,name: "SASS", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" },
 ]
 
 export const Back_End = [ "Ruby", "Rail", "PostgreSQL", "Rswag", "JWT", "CanCanCan", "Node JS", "Device" ];
+
+
 
 export const Developer_Tool = [ "GIT", "GitHub", "Chrome Dev Tool", "Netlify", "Render", "VS code", "Terminal", "Linux" ]
 
