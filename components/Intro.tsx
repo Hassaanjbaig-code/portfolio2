@@ -1,9 +1,10 @@
 import React from 'react'
+import { intro } from '@/constants'
 
 const Intro = () => {
   return (
-    <div>
-        <h1>Hello World</h1>
+    <div className=''>
+        <p className='text-center text-gray-200'>{intro}</p>
     </div>
   )
 }
