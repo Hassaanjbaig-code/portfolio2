@@ -5,7 +5,9 @@ const Table = ({ name, front, containerStyle }: Table) => {
     const array = (text: any[]): React.ReactNode => {
         return text.map((element, index) => (
             <li key={element.id} className='space-y-4 flex w-full items-center'>
-                <Image src={element.src} alt={element.name} width={30} height={30} className="mr-5 my-1" />
+                <span>
+                    <Image src={element.src} alt={element.name} width={30} height={30} className="mr-5 my-1" />
+                </span>
                 {element.name}
             </li>
         ))

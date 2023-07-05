@@ -21,6 +21,12 @@ module.exports = {
         '14c': 'repeat(3, minmax(0, 0.23fr));',
         '16': 'repeat(16, minmax(0, 1fr))',
       },
+      colors: {
+        'border': '#9f9f9f76'
+      },
+      placeholderColor: {
+        'primary': '#9f9f9f76'
+      }
     },
   },
   plugins: [],
