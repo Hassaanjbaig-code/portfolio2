@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { projectdata } from "@/constants";
 import Link from "next/link";
-import Snapshoot from '@/public/Budge App.png'
 
 const Card = () => {
   const slice = (text: string, maxWords: number) => {

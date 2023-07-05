@@ -22,10 +22,11 @@ module.exports = {
         '16': 'repeat(16, minmax(0, 1fr))',
       },
       colors: {
-        'border': '#9f9f9f76'
+        'border': '#9f9f9f76',
+        'tcolor': '#9f9f9f'
       },
       placeholderColor: {
-        'primary': '#9f9f9f76'
+        'primary': '#9f9f9f76',
       }
     },
   },
