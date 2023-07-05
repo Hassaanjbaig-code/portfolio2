@@ -1,4 +1,4 @@
-import { Form } from "@/components"
+import { Contact, Form } from "@/components"
 import Image from "next/image"
 
 const page = () => {

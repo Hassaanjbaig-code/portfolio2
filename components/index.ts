@@ -4,6 +4,7 @@ import Card from "./Card";
 import Intro from "./Intro";
 import Table from "./Table";
 import Form from "./Form";
+import Contact from "./Contact";
 
 export { 
     Navbar,
@@ -11,5 +12,6 @@ export {
     Card,
     Intro,
     Table,
-    Form
+    Form,
+    Contact
 };
