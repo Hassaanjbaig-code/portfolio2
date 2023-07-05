@@ -1,6 +1,6 @@
 export const navbarname = [
   { id: 1, name: 'Home', path: '/' },
-  { id: 2, name: 'Project', path: '/project' },
+  { id: 2, name: 'Project', path: '/projects' },
   { id: 3, name: 'About', path: '/about' },
   { id: 4, name: 'Contact', path: '/contact' },
 ]

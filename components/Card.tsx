@@ -18,7 +18,7 @@ const Card = () => {
 
   const Languages = (text: (string | number)[]): React.ReactNode => {
     return text.map((element, index) => (
-      <li className='mx-2 border border-blue-300 bg-blue-500 p-[2px] rounded-lg text-[10px]'>{element}</li>
+      <li className='mx-2 border border-blue-300 bg-blue-500 p-[2px] rounded-lg text-[10px] p-1'>{element}</li>
     ))
   }
 
