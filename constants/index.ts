@@ -1,3 +1,5 @@
+import { Url } from "next/dist/shared/lib/router/router";
+
 export const navbarname = [
   { id: 1, name: 'Home', path: '/' },
   { id: 2, name: 'Project', path: '/projects' },
@@ -5,20 +7,32 @@ export const navbarname = [
   { id: 4, name: 'Contact', path: '/contact' },
 ]
 
-export const projectdata = [
+type ProjectData = {
+  id: number;
+  title: string;
+  frames: (string | number)[];
+  Image: string;
+  description: string;
+  description2: string;
+  language: string[];
+  sourcecode: string | null;
+  Live_demo: string | null;
+};
+
+export const projectdata: ProjectData[] = [
   {
-    id: 'portfolio4',
+    id: 1,
     title: 'ToDo List',
     frames: ['Todo', 'Font end development', 2022],
     Image: '/ToDo List.PNG',
     description: 'In this project that you can add your daily schedule. This system also help you mark and unmark what you have finshed. Also you can edit the input that you add in it. You can clear all the input that you add and also clear all the complete task. All of this will be save in local storage that you can see even you refersh the page or come back after sometime',
     description2: 'In this project that you can add your daily schedule. This system also help you mark and unmark what you have finshed. Also you can edit the input that you add in it. You can clear all the input that you add and also clear all the complete task. All of this will be save in local storage that you can see even you refersh the page or come back after sometime',
     language: ['HTML', 'CSS', 'JavaScript'],
-    Urls: 'https://github.com/Hassaanjbaig-code/To-do-webpack',
+    sourcecode: 'https://github.com/Hassaanjbaig-code/To-do-webpack',
     Live_demo: 'https://hassaanjbaig-code.github.io/To-do-webpack/dist/',
   },
   {
-    id: 'portfolio1',
+    id: 2,
     title: 'Live Stock',
     frames: ['Live Stock', 'Font end development', 2022],
     Image: '/Live Stock.png',
@@ -29,7 +43,7 @@ export const projectdata = [
     Live_demo: 'https://deploy-preview-5--glowing-boba-18fd9b.netlify.app/',
   },
   {
-    id: 'portfolio2',
+    id: 3,
     title: 'Budge App',
     frames: ['Budge', 'Full Stack Dev', 2023],
     Image: '/Budge App.png',
@@ -40,13 +54,15 @@ export const projectdata = [
     Live_demo: 'https://budge-app-t3v8.onrender.com',
   },
   {
-    id: 'portfolio3',
-    title: 'Uber Navigation',
-    frames: ['UBER', 'Lead Developer', 2018],
-    Image: '/Uber Navigation.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    id: 4,
+    title: 'Tour Reservation',
+    frames: ['Tour', 'Full Stack Dev', 2023],
+    Image: '/Tour Reservation.png',
+    description: "A tour reservation app is a software application designed to facilitate the process of booking and managing tour reservations. It allows users to browse available tours, select desired tour packages, specify booking details, and receive confirmation for their reservations. Built with React, Tailwind CSS, Redux, and the Backend is Ruby, Ruby on Rails Test with Rspec",
     description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language: ['HTML', 'Ruby on Rail', 'CSS', 'JavaScript'],
+    language: ['React', 'Redux','Ruby on Rail', 'Tailwind CSS', 'Rspec'],
+    sourcecode: 'https://github.com/Hassaanjbaig-code/Tour-reservation',
+    Live_demo: null
   },
 ];
 
