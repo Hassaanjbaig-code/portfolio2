@@ -1,5 +1,3 @@
-import { MouseEventHandler } from "react"
-
 export interface Table {
     name: string,
     front: any[],
@@ -9,7 +7,7 @@ export interface Table {
 export interface CustomButton {
     title: string;
     containerStyles: string;
-    handleClick?: MouseEventHandler<HTMLButtonElement>;
     btnType?: 'button' | 'submit';
+    src: string | null
 }
   

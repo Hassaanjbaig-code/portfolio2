@@ -41,7 +41,7 @@ const Card = () => {
             <div>
               <div className="w-full flex justify-between">
                 <h2 className="Card_title">{data.title}</h2>
-                <Link href={`/project${data.id}`} className="text-4xl cursor-pointer hover:text-blue-300">
+                <Link href={`/projects/${data.id}`} className="text-4xl cursor-pointer hover:text-blue-300">
                   <BiSkipNext />
                 </Link>
               </div>
@@ -52,22 +52,17 @@ const Card = () => {
               </div>
               <ul className='flex my-2'>{Languages(data.language)}</ul>
             </div>
-            {/* <div>
-                <Link href="https://github.com/Hassaanjbaig-code/Tour-reservation">
-                  Live Preview
-                </Link>
-              </div> */}
             {data.Live_demo && (
               <CustomButton
                 title="Live Preview"
                 containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none"
-                handleClick={() => handleClick(data.Live_demo)}
+                src={data.Live_demo}
               />
             )}
             <CustomButton
                 title="Source Code"
                 containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none"
-                handleClick={() => handleClick(data.sourcecode)}
+                src={data.sourcecode}
               />
           </div>
         </li>

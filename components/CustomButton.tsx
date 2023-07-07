@@ -3,16 +3,20 @@
 import Image from "next/image";
 import { CustomButton } from "@/types";
 
-const CustomButton = ({ title, containerStyles, handleClick, btnType }: CustomButton) => {
-  return (
-    <button
-        type={btnType || 'button'}
-        className={containerStyles}
-        onClick={handleClick}
-    >
-        {title}
-    </button>
-  )
+const CustomButton = ({ title, containerStyles, btnType, src }: CustomButton) => {
+    return (
+        <>
+            {src !== null && (
+            <button
+                type={btnType || 'button'}
+                className={containerStyles}
+            // onClick={handleClick}
+            >
+                <a href={src}>{title}</a>
+            </button>
+            )}
+        </>
+    )
 }
 
 export default CustomButton
