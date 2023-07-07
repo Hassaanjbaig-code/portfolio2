@@ -19,7 +19,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         '14c': 'repeat(3, minmax(0, 0.23fr));',
-        '16': 'repeat(16, minmax(0, 1fr))',
+        '16': 'repeat(3, minmax(0, 1.23fr))',
       },
       colors: {
         'border': '#9f9f9f76',
