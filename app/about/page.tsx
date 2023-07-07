@@ -23,7 +23,7 @@ const page = () => {
             name="Developer Tool"
             front={Developer}
             containerStyle="bg-purple-300 text-white hover:bg-purple-500"
-          />
+          /> 
         </div>
       </div>
     </div>
