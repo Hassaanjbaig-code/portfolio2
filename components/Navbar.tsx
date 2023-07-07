@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar_div">
         <Image src='/Logo.png' alt="Logo" width={116} height={56} className="object-contain ml-5" />
-        <ul className="flex justify-between w-[18%] mr-7">   
+        <ul className="flex justify-between w-[18%] mr-7 max-md:w-0">   
      {navbarname.map((name) => (
         <li key={name.id} className="list-none max-md:hidden">
             <Link href={name.path}>{name.name}</Link>

@@ -19,7 +19,7 @@ const Table = ({ name, front, containerStyle }: Table) => {
         ))
     }
     return (
-        <article className={`w-1/4 rounded-md ${containerStyle}`}>
+        <article className={`w-1/4 max-md:w-11/12 max-md:ml-3 rounded-md my-4 ${containerStyle}`}>
             <h2 className="font-Bebas_Neue font-semibold text-5xl hover:text-6xl mb-5 text-center">{name}</h2>
             <ul className="font-Roboto font-semibold text-xl hover:text-2xl ml-1 ">{array(front)}</ul>
         </article>

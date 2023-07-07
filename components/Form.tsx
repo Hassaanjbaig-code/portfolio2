@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Form = () => {
     return (
-        <div className="max-md:w-full max-md:my-6 max-md:ml-9">
+        <div className="max-md:w-11/12 max-md:my-6 max-md:ml-2">
             <form className="text-white flex flex-col gap-4">
                 <legend className="font-serif font-semibold">Message me</legend>
                 <span className="gap-4 flex max-md:flex-col">
