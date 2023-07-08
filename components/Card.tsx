@@ -40,7 +40,7 @@ const Card = () => {
         <li data-aos="fade-up" data-aos-easing="linear"
           data-aos-duration="1000" key={index} id={`${data.id}`} className="flex w-[80%] p-6 gap-x-10 list-none border border-slate-600 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col">
           <div className="flex w-[700px] h-[14rem] max-md:w-[256px] max-md:mb-6">
-            <Image src={`/${data.title}.png`} alt="Logo" width={500} height={200} />
+            <Image src={data.Image} alt="Logo" width={500} height={200} />
           </div>
           <div>
             <div>
