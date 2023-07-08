@@ -30,7 +30,8 @@ module.exports = {
       },
       colors: {
         'border': '#9f9f9f76',
-        'tcolor': '#9f9f9f'
+        'tcolor': '#9f9f9f',
+        secondary: "#aaa6c3",
       },
       placeholderColor: {
         'primary': '#9f9f9f76',
