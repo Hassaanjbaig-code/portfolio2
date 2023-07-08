@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .navbar_div {
-  @apply flex justify-around items-center w-full h-16 bg-gray-600 text-white z-10;
+  @apply flex justify-between items-center w-full h-16 bg-gray-600 text-white z-10;
+}
+
+.Logo {
+  @apply w-10 h-10 rounded-xl text-blue-300 text-lg border animate-spin-slow border-gray-400 flex justify-center items-center font-Pacifico font-extrabold object-contain ml-5
 }
 
 .Home {
-  @apply grid grid-cols-2 gap-4 bg-gray-800 w-full h-[calc(100vh-4rem)] overflow-hidden;
+  @apply flex justify-center items-center h-[95%] w-full overflow-hidden;
 }
 
 .Home__left {
   @apply flex flex-col justify-center items-center text-white gap-y-12;
 }
 
+.blue {
+  @apply text-blue-400
+}
+
 .Home__left__title {
-  @apply text-4xl font-bold font-Belanosima;
+  @apply text-8xl font-bold font-Belanosima;
 }
 
 .project {
-  @apply bg-gray-700 text-white;
+  @apply bg-gradient-to-r from-[#34222e] to-[#75c2f6];
 }
 
 .card {
@@ -44,5 +53,32 @@
 .frame:nth-child(3) {
   list-style: circle;
   font-weight: 300;
-  color: #9d8c8ceb;
+  color: #cbb7b7;
+}
+
+@media screen and (max-width: 768px) {
+
+  .frame:nth-child(2),
+  .frame:nth-child(3) {
+    list-style: none;
+  }
+}
+
+.animationfade {
+  animation-name: fade_in;
+  animation-duration: 1200ms;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
