@@ -23,7 +23,8 @@ const Home_text = () => {
                     options={{
                         strings: [
                             "I'm a <span class='blue'>Full-stack developer</span>",
-                            "All Wanted to learn new thing by helpful and collaborative"
+                            "<span class='green'>Bring your idea to life</span>",
+                            "Using latest technology of javaScript and Rails"
                         ],
                         autoStart: true,
                         loop: true,
