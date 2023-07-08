@@ -1,14 +1,20 @@
-import { Personal_link } from "@/types";
+import { Personal_link } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 
-const Personal_Contact = ({ id, src, image, name }: Personal_link) => {
+const Personal_Contact = () => {
     return (
-            <li key={id} className="mx-3">
-                <Link href={src}>
-                    <Image src={image} alt={name} width={30} height={30} />
-                </Link>
-            </li>
+        <ul className="flex w-full justify-center items-center mb-10">
+
+            {Personal_link.map((ele, index) => (
+                <li key={index} className="mx-3">
+                    <Link href={ele.src}>
+                        <Image src={ele.image} alt={ele.name} width={28} height={28} />
+                    </Link>
+                </li>
+
+            ))}
+        </ul>
     )
 }
 

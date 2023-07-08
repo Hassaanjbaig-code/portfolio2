@@ -7,7 +7,7 @@ const Contact = () => {
         return text.map((element, index) => (
             <li key={element.id} className='flex w-full items-center my-5'>
                 <span>
-                    <Image src={element.src} alt={element.name} width={30} height={30} className="mr-5 my-1" />
+                    <Image src={element.src} alt={element.name} width={34} height={34} className="mr-5 my-1" />
                 </span>
                 <h4 className="text-sm text-tcolor">
                     {element.name}

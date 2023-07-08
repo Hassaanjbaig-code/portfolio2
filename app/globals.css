@@ -17,12 +17,16 @@
   @apply flex flex-col justify-center items-center text-white gap-y-12;
 }
 
+.blue {
+  @apply text-blue-400
+}
+
 .Home__left__title {
   @apply text-8xl font-bold font-Belanosima;
 }
 
 .project {
-  @apply bg-gray-700 text-white;
+  @apply  bg-gradient-to-r from-[#34222e] to-[#75c2f6];
 }
 
 .card {
@@ -45,4 +49,15 @@
   list-style: circle;
   font-weight: 300;
   color: #9d8c8ceb;
+}
+
+.animationfade {
+  animation-name: fade_in;
+  animation-duration: 1200ms;
+}
+
+@keyframes fade_in {
+  0% { opacity: 0%; }
+  50% { opacity: 50%; }
+  100% { opacity: 100%; }
 }

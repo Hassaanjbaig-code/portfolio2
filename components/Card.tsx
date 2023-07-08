@@ -5,8 +5,18 @@ import { projectdata } from "@/constants";
 import Link from "next/link";
 import CustomButton from "./CustomButton";
 import { BiSkipNext } from 'react-icons/bi';
+import Aos from "aos";
+import { useEffect } from 'react';
+import "aos/dist/aos.css";
 
 const Card = () => {
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
   const slice = (text: string, maxWords: number) => {
     const words = text.split(" ");
     const slicedWords = words.slice(0, maxWords);
@@ -25,9 +35,10 @@ const Card = () => {
   };
 
   return (
-    <ul className='flex flex-col justify-center items-center gap-y-5'>
+    <ul className='flex flex-col justify-center items-center gap-y-5 '>
       {projectdata.map((data, index) => (
-        <li key={index} id={`${data.id}`} className="flex w-[80%] p-6 gap-x-10 list-none border border-slate-600 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col">
+        <li data-aos="fade-up" data-aos-easing="linear"
+          data-aos-duration="1000" key={index} id={`${data.id}`} className="flex w-[80%] p-6 gap-x-10 list-none border border-slate-600 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col">
           <div className="flex w-[700px] h-[14rem] max-md:w-[256px] max-md:mb-6">
             <Image src={`/${data.title}.png`} alt="Logo" width={500} height={200} />
           </div>
@@ -54,10 +65,10 @@ const Card = () => {
               />
             )}
             <CustomButton
-                title="Source Code"
-                containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none"
-                src={data.sourcecode}
-              />
+              title="Source Code"
+              containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none"
+              src={data.sourcecode}
+            />
           </div>
         </li>
       ))}

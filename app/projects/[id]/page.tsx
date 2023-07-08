@@ -19,7 +19,7 @@ const Page = ({ params }: any) => {
     };
 
     return (
-        <div className="project h-screen">
+        <div className="project h-screen max-md:h-full">
             {projectdata.map((ele) => {
                 if (ele.id == id) {
                     return (
@@ -37,7 +37,7 @@ const Page = ({ params }: any) => {
                                 </div>
                                 <ul className='flex my-6 w-full justify-center'>{Languages(ele.language)}</ul>
                             </div>
-                            <div id="button-list">
+                            <div id="button-list" className="max-md:mb-5">
                                 {ele.Live_demo && (
                                     <CustomButton
                                         title="Live Preview"
@@ -54,7 +54,6 @@ const Page = ({ params }: any) => {
                         </div>
                     )
                 }
-                // return <div>No data</div>
             })}
         </div>
     );
