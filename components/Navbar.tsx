@@ -11,7 +11,7 @@ const Navbar = () => {
   const [navbar, setNabar] = useState(false)
   return (
     <nav className="navbar_div">
-      <Image src='/Logo.png' alt="Logo" width={116} height={56} className="object-contain ml-5" />
+      <h3 className="Logo">HB</h3>
       <div className="w-[15%] md:w-full flex flex-col items-end">
         <button type="button" className="md:hidden cursor-pointer " onClick={() => setNabar(!navbar)}>
           {navbar ? (
