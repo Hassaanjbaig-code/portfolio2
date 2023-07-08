@@ -35,7 +35,7 @@ module.exports = {
       },
       placeholderColor: {
         'primary': '#9f9f9f76',
-      }
+      },
     },
   },
   plugins: [],
