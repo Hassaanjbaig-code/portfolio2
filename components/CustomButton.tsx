@@ -10,7 +10,6 @@ const CustomButton = ({ title, containerStyles, btnType, src }: CustomButton) =>
             <button
                 type={btnType || 'button'}
                 className={containerStyles}
-            // onClick={handleClick}
             >
                 <a href={src}>{title}</a>
             </button>

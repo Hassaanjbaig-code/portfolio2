@@ -10,4 +10,10 @@ export interface CustomButton {
     btnType?: 'button' | 'submit';
     src: string | null
 }
-  
+
+export interface Personal_link{
+    id: number,
+    name: string,
+    src: string,
+    image: string
+}

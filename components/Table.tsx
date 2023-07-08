@@ -1,15 +1,10 @@
 import Image from "next/image";
 import { Table } from "@/types";
-// import { AiFillHtml5 } from 'react-icons/ai';
-// import { DiCss3 } from 'react-icons/di';
-// import { BiLogoJavascript, BiLogoBootstrap, BiLogoReact, BiLogoRedux, BiLogoSass } from 'react-icons/bi';
-// import * as boxicons from 'react-icons/bi';
-// import { TbBrandTailwind } from 'react-icons/tb';
 import React from "react";
 
 const Table = ({ name, front, containerStyle }: Table) => {
     const array = (text: any[]): React.ReactNode => {
-        return text.map((element, index) => (
+        return text.map((element) => (
             <li key={element.id} className='space-y-4 flex items-center'>
                    { element.src && (
                     <Image src={element.src} alt={element.name} width={30} height={30} className="my-1 mr-1"/>

@@ -10,7 +10,7 @@
 }
 
 .Home {
-  @apply grid grid-cols-2 gap-4 bg-gray-800 w-full h-[calc(100vh-4rem)] overflow-hidden;
+  @apply flex justify-center items-center h-[95%] w-full overflow-hidden;
 }
 
 .Home__left {
@@ -18,7 +18,7 @@
 }
 
 .Home__left__title {
-  @apply text-4xl font-bold font-Belanosima;
+  @apply text-8xl font-bold font-Belanosima;
 }
 
 .project {

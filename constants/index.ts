@@ -112,7 +112,7 @@ export const Personl = [
   { id: 2, name: "Lahore, Pakistan", src: '/location.png' }
 ]
 
-const Personal_link = [
+export const Personal_link = [
   { id: 1, name: "twitter", src: "https://twitter.com/hassaanb0001", image: "/twitter.png" },
   { id: 2, name: "Linkedin", src: "https://www.linkedin.com/in/hassaan-jawwad-baig/", image: "/linkedin icon.png" },
   { id: 3, name: "Github", src: "https://github.com/Hassaanjbaig-code/", image: "/Github.png" },
