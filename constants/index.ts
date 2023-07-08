@@ -24,7 +24,7 @@ export const projectdata: ProjectData[] = [
     id: 1,
     title: 'ToDo List',
     frames: ['Todo', 'Font end development', 2022],
-    Image: '/ToDo List.PNG',
+    Image: '/Todo list.png',
     description: 'In this project that you can add your daily schedule. This system also help you mark and unmark what you have finshed. Also you can edit the input that you add in it. You can clear all the input that you add and also clear all the complete task. All of this will be save in local storage that you can see even you refersh the page or come back after sometime.Build with the JavaScript frameWork that is use Webpacker ',
     description2: 'In this project that you can add your daily schedule. This system also help you mark and unmark what you have finshed. Also you can edit the input that you add in it. You can clear all the input that you add and also clear all the complete task. All of this will be save in local storage that you can see even you refersh the page or come back after sometime',
     language: ['HTML', 'CSS', 'JavaScript', 'Webpacker'],
@@ -114,7 +114,7 @@ export const Personl = [
 
 export const Personal_link = [
   { id: 1, name: "twitter", src: "https://twitter.com/hassaanb0001", image: "/twitter.png" },
-  { id: 2, name: "Linkedin", src: "https://www.linkedin.com/in/hassaan-jawwad-baig/", image: "/linkedin icon.png" },
+  { id: 2, name: "Linkedin", src: "https://www.linkedin.com/in/hassaan-jawwad-baig/", image: "/Linkedin icon.png" },
   { id: 3, name: "Github", src: "https://github.com/Hassaanjbaig-code/", image: "/Github.png" },
 ]
 
