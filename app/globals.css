@@ -26,7 +26,7 @@
 }
 
 .project {
-  @apply  bg-gradient-to-r from-[#34222e] to-[#75c2f6];
+  @apply bg-gradient-to-r from-[#34222e] to-[#75c2f6];
 }
 
 .card {
@@ -48,7 +48,15 @@
 .frame:nth-child(3) {
   list-style: circle;
   font-weight: 300;
-  color: #9d8c8ceb;
+  color: #cbb7b7;
+}
+
+@media screen and (max-width: 768px) {
+
+  .frame:nth-child(2),
+  .frame:nth-child(3) {
+    list-style: none;
+  }
 }
 
 .animationfade {
@@ -57,7 +65,15 @@
 }
 
 @keyframes fade_in {
-  0% { opacity: 0%; }
-  50% { opacity: 50%; }
-  100% { opacity: 100%; }
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
