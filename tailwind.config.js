@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 3s linear infinite',
+        'spin-slow': 'spin 4s linear infinite',
         'bounce-slow': 'bounce 1s linear',
         'wiggle': 'wiggle 1s ease-in-out infinite'
       },
@@ -20,7 +20,8 @@ module.exports = {
       fontFamily: {
         Belanosima: ["Belanosima", "sans-serif"],
         Roboto: ['Roboto Condensed', 'sans-serif'],
-        Bebas_Neue: ['Bebas Neue', 'sans-serif']
+        Bebas_Neue: ['Bebas Neue', 'sans-serif'],
+        Pacifico: ["Pacifico", "cursive"]
       },
       gridTemplateColumns: {
         '14c': 'repeat(3, minmax(0, 0.23fr));',
