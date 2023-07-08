@@ -60,13 +60,13 @@ const Card = () => {
             {data.Live_demo && (
               <CustomButton
                 title="Live Preview"
-                containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none"
+                containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none hover:text-white"
                 src={data.Live_demo}
               />
             )}
             <CustomButton
               title="Source Code"
-              containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none"
+              containerStyles="p-2 rounded-md border border-slate-400 mr-2 hover:bg-black hover:border-none hover:text-white"
               src={data.sourcecode}
             />
           </div>
