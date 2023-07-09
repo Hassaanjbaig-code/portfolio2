@@ -22,7 +22,8 @@ module.exports = {
         Roboto: ['Roboto Condensed', 'sans-serif'],
         Bebas_Neue: ['Bebas Neue', 'sans-serif'],
         Pacifico: ["Pacifico", "cursive"],
-        Poppins: ["Poppins", 'sans-serif']
+        Poppins: ["Poppins", 'sans-serif'],
+        Roboto: ["Roboto", "sans-serif"]
       },
       gridTemplateColumns: {
         '14c': 'repeat(3, minmax(0, 0.23fr));',
@@ -36,6 +37,9 @@ module.exports = {
       placeholderColor: {
         'primary': '#9f9f9f76',
       },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],

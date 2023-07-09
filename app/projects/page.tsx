@@ -7,6 +7,7 @@ const page = () => {
   const arr= projectdata;
   return (
     <div className="project">
+      <h1 className="font-extrabold text-center shadow-sm text-8xl bg-clip-text text-[#fff] mt-10">My Project</h1>
       <div className=''>
       <Card />
       </div>

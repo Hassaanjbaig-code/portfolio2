@@ -30,7 +30,7 @@ const Card = () => {
 
   const Languages = (text: (string | number)[]): React.ReactNode => {
     return text.map((element, index) => (
-      <li key={index} className='mx-2 border border-blue-300 bg-blue-500 rounded-lg text-[10px] p-1 max-md:text-[8px]'>{element}</li>
+      <li key={index} className='mx-2 border border-blue-300 bg-white text-center text-[#2c2c2c] w-20 h-7 rounded-lg text-[10px] p-1 max-md:text-[8px]'>{element}</li>
     ))
   };
 
@@ -38,13 +38,13 @@ const Card = () => {
     <ul className='flex flex-col justify-center items-center gap-y-5 '>
       {projectdata.map((data, index) => (
         <li data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="1000" key={index} id={`${data.id}`} className="flex w-[80%] p-6 gap-x-10 list-none border border-slate-800 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col">
-          <div className="flex w-[700px] h-[14rem] max-md:w-[256px] max-md:mb-6">
-            <Image src={`/${data.title}.png`} alt="Logo" width={500} height={200} className="rounded-xl" />
+          data-aos-duration="1000" key={index} id={`${data.id}`} className="flex w-[80%] bg-[#383838] md:h-[33rem] p-8 gap-x-10 list-none border-2 border-slate-800 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col reverse">
+          <div id={`image_${index }`} className="flex w-[90rem] md:h-[27rem] max-md:w-[256px] max-md:mb-6 image_card">
+            <Image src={`/${data.title}.png`} alt="Logo" width={600} height={200} className="rounded-xl" />
           </div>
-          <div>
-            <div>
-              <div className="w-full flex justify-between">
+          <div className="flex flex-col gap-y-6">
+            <div className="md:h-[16rem]">
+              <div className="w-full flex justify-between items-center">
                 <h2 className="Card_title">{data.title}</h2>
                 <Link href={`/projects/${data.id}`} className="text-4xl cursor-pointer hover:text-blue-300">
                   <BiSkipNext />
@@ -52,23 +52,25 @@ const Card = () => {
               </div>
 
               <div className="my-2">
-                <ul className="grid grid-cols-14c max-md:grid-cols-16">{frames(data.frames)}</ul>
-                <p className='font-Roboto'>{slice(data.description, 50)}</p>
+                <ul className="grid grid-cols-3 items-center max-md:grid-cols-16">{frames(data.frames)}</ul>
+                <p className='font-Roboto text-[#d1d0d0c7]'>{slice(data.description, 50)}</p>
               </div>
               <ul className='flex my-2'>{Languages(data.language)}</ul>
             </div>
-            {data.Live_demo && (
+            <div>
+              {data.Live_demo && (
+                <CustomButton
+                  title="Live Preview"
+                  containerStyles="p-2 rounded-md bg-[#121212] text-white p-3 mr-2 hover:bg-black hover:border-none hover:text-white"
+                  src={data.Live_demo}
+                />
+              )}
               <CustomButton
-                title="Live Preview"
-                containerStyles="p-2 rounded-md border border-slate-100 mr-2 hover:bg-black hover:border-none hover:text-white"
-                src={data.Live_demo}
+                title="Source Code"
+                containerStyles="p-2 rounded-md bg-[#121212] text-white p-3 mr-2 hover:bg-black hover:border-none hover:text-white"
+                src={data.sourcecode}
               />
-            )}
-            <CustomButton
-              title="Source Code"
-              containerStyles="p-2 rounded-md border border-slate-100 mr-2 hover:bg-black hover:border-none hover:text-white"
-              src={data.sourcecode}
-            />
+            </div>
           </div>
         </li>
       ))}

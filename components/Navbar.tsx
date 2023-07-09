@@ -5,10 +5,13 @@ import Link from "next/link"
 import { HiMenuAlt1 } from 'react-icons/hi'
 import { AiOutlineCloseSquare } from 'react-icons/ai';
 import { useState } from 'react';
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [navbar, setNabar] = useState(false)
-  const [active, setActive] = useState("")
+  const router = useRouter()
+  const path = usePathname();
+  console.log(path)
   return (
     <nav className="navbar_div">
       <h3 className="Logo">HB</h3>
@@ -17,10 +20,9 @@ const Navbar = () => {
        gap-10'>
           {navbarname.map((link) => (
             <li key={link.id}
-              className={`${active === link.name ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer mr-5`}
-              onClick={() => setActive(link.name)}>
-              <a href={link.path}>{link.name}</a>
+              className={`${ path === link.name ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer mr-5`}>
+              <a onClick={() => router.push(link.path)}>{link.name}</a>
             </li>
           ))}
         </ul>
