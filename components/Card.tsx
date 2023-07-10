@@ -38,14 +38,14 @@ const Card = () => {
     <ul className='flex flex-col justify-center items-center gap-y-5 '>
       {projectdata.map((data, index) => (
         <li data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="1000" key={index} id={`${data.id}`} className="flex w-[80%] bg-[#383838] md:h-[33rem] p-8 gap-x-10 list-none border-2 border-slate-800 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col reverse">
+          data-aos-duration="1000" key={index} id={`${data.id}`} className="flex w-[80%] bg-[#383838] md:h-[33rem] p-8 md:gap-x-10 list-none border-2 border-slate-800 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col reverse">
           <div id={`image_${index }`} className="flex w-[90rem] md:h-[27rem] max-md:w-[256px] max-md:mb-6 image_card">
             <Image src={`/${data.title}.png`} alt="Logo" width={600} height={200} className="rounded-xl" />
           </div>
-          <div className="flex flex-col gap-y-6">
+          <div className="flex flex-col gap-y-6 max-md:w-[19rem]">
             <div className="md:h-[16rem]">
               <div className="w-full flex justify-between items-center">
-                <h2 className="Card_title">{data.title}</h2>
+                <h2 className="Card_title max-md:text-3xl">{data.title}</h2>
                 <Link href={`/projects/${data.id}`} className="text-4xl cursor-pointer hover:text-blue-300">
                   <BiSkipNext />
                 </Link>
@@ -53,7 +53,7 @@ const Card = () => {
 
               <div className="my-2">
                 <ul className="grid grid-cols-3 items-center max-md:grid-cols-16">{frames(data.frames)}</ul>
-                <p className='font-Roboto text-[#d1d0d0c7]'>{slice(data.description, 50)}</p>
+                <p className='font-Roboto text-[#d1d0d0c7] max-md:text-base'>{slice(data.description, 50)}</p>
               </div>
               <ul className='flex my-2'>{Languages(data.language)}</ul>
             </div>

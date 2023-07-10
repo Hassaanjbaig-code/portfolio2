@@ -17,7 +17,7 @@ const Home_text = () => {
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500" className="Home__left">
-            <h2 className="animate-charcter font-extrabold">Hassaan Baig</h2>
+            <h2 className="max-md:text-5xl animate-charcter font-extrabold">Hassaan Baig</h2>
             <div className='text-4xl font-Belanosima text-center'>
                 <Typewriter
                     options={{

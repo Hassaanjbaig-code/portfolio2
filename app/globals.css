@@ -99,6 +99,10 @@ body {
   .frame:nth-child(3) {
     list-style: none;
   }
+
+  .frame:nth-child(1) {
+    font-size: 1.125rem;
+  }
 }
 
 .animationfade {
