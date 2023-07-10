@@ -42,7 +42,7 @@ const Card = () => {
           <div id={`image_${index }`} className="flex w-[90rem] md:h-[27rem] max-md:w-[256px] max-md:mb-6 image_card">
             <Image src={`/${data.title}.png`} alt="Logo" width={600} height={200} className="rounded-xl" />
           </div>
-          <div className="flex flex-col gap-y-6 max-md:w-[19rem]">
+          <div className="flex flex-col gap-y-6 max-md:w-[17rem]">
             <div className="md:h-[16rem]">
               <div className="w-full flex justify-between items-center">
                 <h2 className="Card_title max-md:text-3xl">{data.title}</h2>
