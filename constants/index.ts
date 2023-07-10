@@ -60,7 +60,7 @@ export const projectdata: ProjectData[] = [
     Image: '/tour reservation.png',
     description: "A tour reservation app is a software application designed to facilitate the process of booking and managing tour reservations. It allows users to browse available tours, select desired tour packages, specify booking details, and receive confirmation for their reservations. Built with React, Tailwind CSS, Redux, and the Backend is Ruby, Ruby on Rails Test with Rspec",
     description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language: ['React', 'Redux','Ruby on Rail', 'Tailwind CSS', 'Rspec'],
+    language: ['React', 'Redux', 'Ruby on Rail', 'Tailwind CSS', 'Rspec'],
     sourcecode: 'https://github.com/Hassaanjbaig-code/Tour-reservation',
     Live_demo: null
   },
@@ -68,43 +68,43 @@ export const projectdata: ProjectData[] = [
 
 export const intro = "I'm a passionate developer who loves to create innovative and user-friendly applications that solve real-world problems. My journey in programming began in 2021, and since then, I've been dedicated to expanding my knowledge and skills in the field. As part of my pursuit, I enrolled in Microverse, an online software program, in 2022, where I had the opportunity to dive deep into full-stack web development. With this experience, I can help bring your ideas to life! Take a look at some of my work and experience below, and if you like what you see, don't hesitate to reach out. You can also grab a copy of my resume below to learn more about my skills and experience. Let's create something amazing together!";
 
-export const resume = "https://docs.google.com/document/d/1AJoLSthvxEOgcU_DZVjgyKcJvscb33wlCZcNRr2NS3A/edit?pli=1";
+export const resume = "https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=9f594e3357&attid=0.1&permmsgid=msg-f:1771043120105393107&th=1894025597c80bd3&view=att&disp=inline&saddbat=ANGjdJ_KciZwb_Dcn-M1PFd4AYRjUNFJUlsy8QudzFKyP0V1BrHNAiKJBBzMdK31Kq5wvGZP4Tg3X6LBZvifn6xByaAsftW9WLfNErcg2p0FuFD34lQA_UCgj1M1217ntzo0vZtqz1VmnvIydjk2ejKhcim6tqK9Q43gCK3dWeqV9GnZJJxlwBLeiQLknXhOihCy_vzemakVSYBhLiV8HSj0h8zmTVBIdzFJnOypme_B8MuDWiIGVzNsXLFHyOnBC1GPy5Yx9D3cnMXoof76ydlCJlT-d866yxDjJt3XhKerpJ5dlWLS6OwqiPmq1LLwDHrTUaKTSzXqH-p42ttrLhvCRvdOXCXZ6Ky3UTQ3TSyICjGdvEEKGd1yIx08Lco50xxkRtiKN21CHgpYIAJO-rmIXPGxabWmfKa0b_Jjt_rlzkRQrNkSiRUrrCszQ8VqrEkMy0FDIYmPH9GrcP5rk8dcgQqQA6tbW9wj1YBfju3t8WMT2Fv4BKaaMYdkxjA_BLTxXWqv2S7cvOAFqpiCcpgLT9U4rDbnJ38ueLT8p1_AT9BLrlrAAbApsnsSo-l5yyWSawx1gj6qW_mbhSW2ROm7mK55rpDk927ziorYxS9F4JV0lSgqTp_BX3IxBD210qgUKhL2J05uw3lSjw24-_Hq0D91bRVdPYI-ZfGynp9weNGnE9YK2vc65aS2Udp3DIGC44m2m6d3j0iZnm7BvMuKwXmfVO48kCIYRumLpRqS5DEnw6Wzgj2zx8lZL-Y49Jz7YKGeopBDvlgYCLBUv2fAC2UyrIa6YO4cRdm7PWgsqQhbR4htYwzz1P-UE3PJ6lMWdFDdWhq9DJVzPM8RZ1lAS09HvfO5TUfbfhxFN_zQpBC7XI9gobX9y31MJVVA6MMuGO6RjtHMj_-KQfCOikThz9YV16cpZZ9Hp1e-Hjmy1wYVNA8Nz_uKX42V-KuMe8xw627vBKSP38b8it7zpqCSlxYzkKUaBaEBGQv2LfXIWLVtDr6dEN8yStbODVE";
 
-export const Front_End = [ "HTML5", "CSS", "JavaScript", "Tailwind CSS", "BootStrap5", "React", "Redux", "SASS" ];
+export const Front_End = ["HTML5", "CSS", "JavaScript", "Tailwind CSS", "BootStrap5", "React", "Redux", "SASS"];
 export const Front = [
-  { id: 1 ,name: "HTML5", src: '/html5.png' },
-  { id: 2 ,name: "CSS", src: "/css.png" },
-  { id: 3 ,name: "JavaScript", src: "/javascript.gif" },
-  { id: 4 ,name: "Tailwind CSS", src: "/tailwind css.png" },
-  { id: 5 ,name: "Bootstrap", src: "/bootstrap.png" },
-  { id: 6 ,name: "React", src: "/react.png" },
-  { id: 7 ,name: "Redux", src: "/redux.png" },
-  { id: 8 ,name: "SASS", src: "/sass.png" },
+  { id: 1, name: "HTML5", src: '/html5.png' },
+  { id: 2, name: "CSS", src: "/css.png" },
+  { id: 3, name: "JavaScript", src: "/javascript.gif" },
+  { id: 4, name: "Tailwind CSS", src: "/tailwind css.png" },
+  { id: 5, name: "Bootstrap", src: "/bootstrap.png" },
+  { id: 6, name: "React", src: "/react.png" },
+  { id: 7, name: "Redux", src: "/redux.png" },
+  { id: 8, name: "SASS", src: "/sass.png" },
 ]
 
-export const Back_End = [ "Ruby", "Rail", "PostgreSQL", "Rswag", "JWT", "CanCanCan", "Node JS", "Device" ];
+export const Back_End = ["Ruby", "Rail", "PostgreSQL", "Rswag", "JWT", "CanCanCan", "Node JS", "Device"];
 
 export const Back = [
-  {id: 1, name: "Ruby", src: "/ruby.png"},
-  {id: 8, name: "Device", src: "/Device.png"},
-  {id: 2, name: "Rails", src: "/rails.png"},
-  {id: 3, name: "PostgreSQL", src: "/postgreSQL.png"},
-  {id: 4, name: "Rswag", src: "/Testing.png"},
-  {id: 5, name: "JWT", src: "/Device.png"},
-  {id: 6, name: "CanCanCan", src: "/Authorization.png"},
-  {id: 7, name: "Node Js", src: "/node.png"},
+  { id: 1, name: "Ruby", src: "/ruby.png" },
+  { id: 8, name: "Device", src: "/Device.png" },
+  { id: 2, name: "Rails", src: "/rails.png" },
+  { id: 3, name: "PostgreSQL", src: "/postgreSQL.png" },
+  { id: 4, name: "Rswag", src: "/Testing.png" },
+  { id: 5, name: "JWT", src: "/Device.png" },
+  { id: 6, name: "CanCanCan", src: "/Authorization.png" },
+  { id: 7, name: "Node Js", src: "/node.png" },
 ]
 
-export const Developer =[
-  { id: 1, name: "GIT", src: "/Git.png"},
-  { id: 2, name: "Github", src: "/Github.png"},
-  { id: 3, name: "Chrome Dev Tool", src: "/Browser.png"},
-  { id: 4, name: "Netlify", src: "/netlify.png"},
-  { id: 5, name: "Render", src: "/render.png"},
-  { id: 6, name: "Vs Code", src: "/VS code.png"},
-  { id: 7, name: "Terminal", src: "/Console.png"},
-  { id: 8, name: "Linux", src: "/Linux.gif"},
-  {id: 9, name: "Pair Programming", src: "/Programming.gif"}
+export const Developer = [
+  { id: 1, name: "GIT", src: "/Git.png" },
+  { id: 2, name: "Github", src: "/Github.png" },
+  { id: 3, name: "Chrome Dev Tool", src: "/Browser.png" },
+  { id: 4, name: "Netlify", src: "/netlify.png" },
+  { id: 5, name: "Render", src: "/render.png" },
+  { id: 6, name: "Vs Code", src: "/VS code.png" },
+  { id: 7, name: "Terminal", src: "/Console.png" },
+  { id: 8, name: "Linux", src: "/Linux.gif" },
+  { id: 9, name: "Pair Programming", src: "/Programming.gif" }
 ]
 
 export const Personl = [
