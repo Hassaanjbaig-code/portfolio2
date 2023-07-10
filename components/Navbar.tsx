@@ -11,7 +11,6 @@ const Navbar = () => {
   const [navbar, setNabar] = useState(false)
   const router = useRouter()
   const path = usePathname();
-  console.log(path)
   return (
     <nav className="navbar_div">
       <h3 className="Logo">HB</h3>
