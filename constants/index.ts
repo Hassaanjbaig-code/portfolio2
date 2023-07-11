@@ -55,14 +55,14 @@ export const projectdata: ProjectData[] = [
   },
   {
     id: 4,
-    title: 'Tour Reservation',
-    frames: ['Tour', 'Full Stack Dev', 2023],
-    Image: '/tour reservation.png',
-    description: "A tour reservation app is a software application designed to facilitate the process of booking and managing tour reservations. It allows users to browse available tours, select desired tour packages, specify booking details, and receive confirmation for their reservations. Built with React, Tailwind CSS, Redux, and the Backend is Ruby, Ruby on Rails Test with Rspec",
+    title: 'Space X',
+    frames: ['Space', 'Front End Dev', 2023],
+    Image: '/Space X.png',
+    description: "Space X project is a group react-redux project that use space x API to display a list of rockets and mission. Rocket can be reserved and mission can joined. Users can access the personal list the profile section.",
     description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language: ['React', 'Redux', 'Ruby on Rail', 'Tailwind CSS', 'Rspec'],
-    sourcecode: 'https://github.com/Hassaanjbaig-code/Tour-reservation',
-    Live_demo: null
+    language: ['React', 'Redux', 'CSS'],
+    sourcecode: 'https://github.com/Hassaanjbaig-code/SpaceX',
+    Live_demo: 'https://space-x-self-beta.vercel.app/'
   },
 ];
 
