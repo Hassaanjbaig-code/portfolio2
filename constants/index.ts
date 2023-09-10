@@ -64,6 +64,17 @@ export const projectdata: ProjectData[] = [
     sourcecode: 'https://github.com/Hassaanjbaig-code/SpaceX',
     Live_demo: 'https://space-x-self-beta.vercel.app/'
   },
+  {
+    id: 5,
+    title: 'PLAYSTATION & Insomniac Game showcase',
+    frames: ['Space', 'Front End Dev', 2023],
+    Image: '/Capstone-Project_about.png',
+    description: "I build small project that show my HTML and CSS working. In this website I share about the PlayStation and Insomniac Games Show. Showing the Top game which Insomniac created for the PlayStation",
+    description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    language: ['JavaScript', 'HTML5', 'CSS'],
+    sourcecode: 'https://github.com/Hassaanjbaig-code/Capstone-Project',
+    Live_demo: 'https://hassaanjbaig-code.github.io/Capstone-Project/index.html'
+  },
 ];
 
 export const intro = "I'm a passionate developer who loves to create innovative and user-friendly applications that solve real-world problems. My journey in programming began in 2021, and since then, I've been dedicated to expanding my knowledge and skills in the field. As part of my pursuit, I enrolled in Microverse, an online software program, in 2022, where I had the opportunity to dive deep into full-stack web development. With this experience, I can help bring your ideas to life! Take a look at some of my work and experience below, and if you like what you see, don't hesitate to reach out. You can also grab a copy of my resume below to learn more about my skills and experience. Let's create something amazing together!";
