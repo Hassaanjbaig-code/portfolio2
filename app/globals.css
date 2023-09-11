@@ -103,6 +103,9 @@ body {
   .frame:nth-child(1) {
     font-size: 1.125rem;
   }
+  .card_dis_2 {
+    height: 27rem !important;
+  }
 }
 
 .animationfade {
@@ -169,7 +172,6 @@ body {
   justify-content: end;
 }
 
-
 .card_title_5 {
   @apply text-2xl lg:text-4xl
 }
@@ -185,3 +187,9 @@ body {
 .Frames_5 .frame:nth-child(1) {
   @apply text-2xl
 }
+
+/* 
+
+.card_dis_2 {
+  @apply md:h-[22rem]
+} */
