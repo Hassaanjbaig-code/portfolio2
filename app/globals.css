@@ -168,3 +168,20 @@ body {
 #image_3 {
   justify-content: end;
 }
+
+
+.card_title_5 {
+  @apply text-2xl lg:text-4xl
+}
+
+.card_title_6 {
+  @apply text-5xl
+}
+
+.Frames_5  {
+  @apply max-lg:flex max-lg:gap-x-6 grid-cols-17
+}
+
+.Frames_5 .frame:nth-child(1) {
+  @apply text-2xl
+}

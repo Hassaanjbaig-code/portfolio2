@@ -28,6 +28,8 @@ module.exports = {
       gridTemplateColumns: {
         '14c': 'repeat(3, minmax(0, 0.23fr));',
         '16': 'repeat(3, minmax(0, 1.23fr))',
+        '17': '13rem 10rem 8rem',
+        '17c': '54% 28% 15%',
       },
       colors: {
         'border': '#9f9f9f76',

@@ -66,14 +66,25 @@ export const projectdata: ProjectData[] = [
   },
   {
     id: 5,
-    title: 'PLAYSTATION & Insomniac Game showcase',
-    frames: ['Space', 'Front End Dev', 2023],
+    title: 'PlayStation and Insomniac Games Showcase',
+    frames: ['GameShowcase', 'Front End', 2023],
     Image: '/Capstone-Project_about.png',
     description: "I build small project that show my HTML and CSS working. In this website I share about the PlayStation and Insomniac Games Show. Showing the Top game which Insomniac created for the PlayStation",
     description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     language: ['JavaScript', 'HTML5', 'CSS'],
     sourcecode: 'https://github.com/Hassaanjbaig-code/Capstone-Project',
     Live_demo: 'https://hassaanjbaig-code.github.io/Capstone-Project/index.html'
+  },
+  {
+    id: 6,
+    title: 'Img Generator',
+    frames: ['Open AI', 'Full Stack', 2023],
+    Image: '/imagegenerator.png',
+    description: "AI Photo Generator is a full stack project that use React and Express js with Open AI. In this project user can genrator photo by the text and choose the picture you wanted to share with different user and can download that image.",
+    description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    language: ['React', 'Tailwind css', 'Express js', 'Open AI'],
+    sourcecode: 'https://github.com/Hassaanjbaig-code/My-AI-Photo-generator',
+    Live_demo: 'https://ai-image-generator-alpha-rosy.vercel.app/'
   },
 ];
 

@@ -30,30 +30,30 @@ const Card = () => {
 
   const Languages = (text: (string | number)[]): React.ReactNode => {
     return text.map((element, index) => (
-      <li key={index} className='mx-2 border border-blue-300 bg-white text-center text-[#2c2c2c] w-20 h-7 rounded-lg text-[10px] p-1 max-md:text-[8px]'>{element}</li>
+      <li key={index} className='mx-2 border border-blue-300 bg-white text-center text-[#2c2c2c] max-md:w-20 max-md:h-7 rounded-lg text-[1rem] p-1 max-md:text-[8px]'>{element}</li>
     ))
   };
 
   return (
-    <ul className='flex flex-col justify-center items-center gap-y-5 '>
+    <ul className='flex flex-col justify-center items-center gap-y-5'>
       {projectdata.map((data, index) => (
         <li data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="1000" key={index} id={`${data.id}`} className="flex w-[80%] bg-[#383838] md:h-[33rem] p-8 md:gap-x-10 list-none border-2 border-slate-800 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col reverse">
+          data-aos-duration="1000" key={index} id={`card ${data.id}`} className="flex w-[80%] bg-[#383838] md:h-[33rem] p-8 md:gap-x-10 list-none border-2 border-slate-800 rounded-[40px] mt-5 mb-5 justify-between items-center max-md:flex-col reverse max-md:w-[90%]">
           <div id={`image_${index }`} className="flex w-[90rem] md:h-[27rem] max-md:w-[256px] max-md:mb-6 image_card">
             <Image src={`/${data.title}.png`} alt="Logo" width={600} height={200} className="rounded-xl" />
           </div>
           <div className="flex flex-col gap-y-6 max-md:w-[17rem]">
             <div className="md:h-[16rem]">
               <div className="w-full flex justify-between items-center">
-                <h2 className="Card_title max-md:text-3xl">{data.title}</h2>
+                <h2 className={`Card_title max-md:text-3xl card_title_${data.id}`}>{data.title}</h2>
                 <Link href={`/projects/${data.id}`} className="text-4xl cursor-pointer hover:text-blue-300">
                   <BiSkipNext />
                 </Link>
               </div>
 
               <div className="my-2">
-                <ul className="grid grid-cols-3 items-center max-md:grid-cols-16">{frames(data.frames)}</ul>
-                <p className='font-Roboto text-[#d1d0d0c7] max-md:text-base'>{slice(data.description, 50)}</p>
+                <ul className={`grid grid-cols-3 items-center max-md:grid-cols-16 Frames_${data.id}`}>{frames(data.frames)}</ul>
+                <p className='font-Roboto text-[#d1d0d0c7] max-md:text-base text-lg'>{slice(data.description, 50)}</p>
               </div>
               <ul className='flex my-2'>{Languages(data.language)}</ul>
             </div>
